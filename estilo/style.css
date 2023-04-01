@@ -1,9 +1,11 @@
 body {
     font-family: Arial;
+    background-color: #0f0f0f;
+    color: white;
 }
 
 .nav {
-    background-color: blue;
+    background-color: #1c1c1c;
 }
 
 .nav-row {
@@ -13,14 +15,14 @@ body {
 .nav-btn {
     width: max-content;
     margin: auto;
-    padding: 10px 40px 10px 40px;
+    padding: 7px 40px 7px 40px;
     text-align: center;
 }
 
 .nav-text {
     float: left;
     font-size: 16px;
-    color: white;
+    color: #fcb103;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -28,4 +30,17 @@ body {
 
 .col {
     align-self: center;
+}
+
+.intro-section {
+    padding: 200px 40px 40px 80px;
+}
+
+#intro-text {
+    width: 50%;
+}
+
+.big-bold-text {
+    font-size: 80;
+    color: #fcb103;
 }
