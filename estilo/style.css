@@ -32,15 +32,59 @@ body {
     align-self: center;
 }
 
-.intro-section {
-    padding: 200px 40px 40px 80px;
+.big-bold-text {
+    font-size: 80px;
+    color: #fcb103;
 }
 
 #intro-text {
     width: 50%;
 }
 
-.big-bold-text {
-    font-size: 80;
+.header-title {
+    padding: 0px 0px 40px 0px;
+    font-size: 40px;
     color: #fcb103;
+    text-align: center;
+}
+
+section {
+    text-align: left;
+    padding: 40px 40px 40px 80px;
+}
+
+.intro-section {
+    padding: 200px 40px 40px 80px;
+}
+
+svg {
+    width: 200px;
+    height: 200px;    
+    transform: rotate(90deg);
+    overflow: initial;
+} 
+  
+circle {
+    stroke-width:10px;
+    fill:none;    
+}
+
+.circle_box {
+    width: 25%;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.circle_box div {
+    position: relative;
+}
+
+.circle_box span {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: #C98C00;
+    font-size: 20px;
 }
