@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+}
+
+.nav {
+    background-color: blue;
+}
+
+.nav-row {
+    overflow: hidden;
+}
+
+.nav-btn {
+    width: max-content;
+    margin: auto;
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+}
+
+.nav-text {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.col {
+    align-self: center;
+}
