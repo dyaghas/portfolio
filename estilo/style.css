@@ -5,31 +5,29 @@ body {
 }
 
 .nav {
+    transition: top 0.3s;
     background-color: #1c1c1c;
 }
 
 .nav-row {
     overflow: hidden;
+    transition: top 0.3s;
 }
 
 .nav-btn {
-    width: max-content;
-    margin: auto;
-    padding: 7px 40px 7px 40px;
+    display: inline-block;
+    padding: 15px 40px 15px 40px;
     text-align: center;
 }
 
 .nav-text {
-    float: left;
-    font-size: 16px;
+    transition: 0.3s;
     color: #fcb103;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-.col {
-    align-self: center;
+.nav-text:hover {
+    color: #9c6d00
 }
 
 .big-bold-text {

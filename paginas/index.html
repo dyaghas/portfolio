@@ -9,17 +9,17 @@
     </head>
     <body>
         <div class="nav navbar-expand-sm sticky-top d-flex justify-content-center" id="navbar">
-            <div class="row nav-row">
-                <div class="col nav-btn">
+            <div class="nav-row">
+                <div class="nav-btn">
                     <a href="#about" class="nav-text">Sobre</a>
                 </div>
-                <div class="col nav-btn">
+                <div class="nav-btn">
                     <a href="#skills" class="nav-text">Conhecimentos</a>
                 </div>
-                <div class="col nav-btn">
+                <div class="nav-btn">
                     <a href="#projects" class="nav-text">Projetos</a>
                 </div>
-                <div class="col nav-btn">
+                <div class="nav-btn">
                     <a href="#contact" class="nav-text">Contato</a>
                 </div>
             </div>
@@ -28,11 +28,11 @@
             <h1>Olá, me chamo <br><b class="big-bold-text">Gustavo <br>Cristian</b></h1><br>
             <div id="intro-text">
             Sou formado com o título de Técnico em Desenvolvimento de Sistemas e estou cursando Ciência da Computação
-            no momento. Desde 2019, Tenho adquirido conhecimentos em diversas ferramentas e tecnologias
+            no momento. Desde 2019 tenho adquirido conhecimentos em diversas ferramentas e tecnologias
             </div>
         </section>
         <section id="skills">
-            <header class="header-title">CONHECIMENTOS</header>
+            <header class="header-title"><b>CONHECIMENTOS</b></header>
             <div class="row">
                 <div class="circle_box">
                     <div>
@@ -110,5 +110,22 @@
                 </div>
             </div>
         </section>
+        <section id="projects">
+            <header class="header-title"><b>PROJETOS</b></header>
+        </section>
+
+        <script>
+            //navbar
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+        </script>
     </body>
 </html>
