@@ -67,18 +67,32 @@ circle {
     fill:none;    
 }
 
-.circle_box {
+.circle-box {
     width: 25%;
     font-size: 30px;
     color: black;
     text-align: center;
 }
 
-.circle_box div {
+@media (max-width: 1024px) {
+    .circle-box {
+        width: 33%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .circle-box {
+        width: 50%;
+        font-size: 10px;
+    }
+}
+
+.circle-box div {
     position: relative;
 }
 
-.circle_box span {
+.circle-box span {
     position: absolute;
     left: 50%;
     top:50%;
@@ -121,4 +135,29 @@ circle {
 .project-item:active {
     background-color: #1c1c1c;
     color: white;
+}
+
+footer {
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+    box-shadow: 7px 7px 4px 2px rgba(0, 0, 0, 0.1);
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #fcb103;
+}
+
+.footer-link:hover {
+    color: #9c6d00;
+}
+
+.footer-link:active {
+    color: #fcb103;
+}
+
+.footer-logo {
+    margin: 0px 10px 0px 10px;
 }
