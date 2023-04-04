@@ -99,15 +99,26 @@ circle {
     background-color: #1c1c1c;
 }
 
-.grid-item:hover {
-    color: #fcb103;
-}
-
 #projects {
     text-align: center;
 }
 
 .project-item {
-    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background-color: #1c1c1c;
+    margin: 2px;
+    padding: 40px 0px 40px 0px;
+    transition: 0.3s;
     font-size: 25px;
+}
+
+.project-item:hover {
+    background-color: #0f0f0f;
+    color: #fcb103;
+}
+
+.project-item:active {
+    background-color: #1c1c1c;
+    color: white;
 }
