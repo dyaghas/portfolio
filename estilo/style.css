@@ -175,6 +175,11 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    .nav-btn {
+        padding: 10px 30px 10px 30px;
+        font-size: 12px;
+    }
+
     .circle-box {
         width: 33%;
         font-size: 20px;
@@ -198,8 +203,29 @@ footer {
 }
 
 @media (max-width: 700px) {
+    .nav-btn {
+        padding: 7px 20px 7px 20px;
+        font-size: 10px;
+    }
+
     .circle-box {
         width: 50%;
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .project-item {
+        font-size: 12px;
+    }
+
+    .grid-item-certificate {
+        font-size: 12px;
+    }
+
+    .project-label {
+        font-size: 7px;
+    }
+
+    .certificate-label {
+        font-size: 7px;
     }
 }
