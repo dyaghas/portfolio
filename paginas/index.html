@@ -65,7 +65,7 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="240"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="243"/>
                         </svg>
                         <span>SQL</span>
                     </div>
@@ -76,7 +76,7 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="240"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="243"/>
                         </svg>
                         <span>Git</span>
                     </div>
@@ -85,7 +85,7 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="240"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="243"/>
                         </svg>
                         <span>Web</span>
                     </div>
@@ -112,20 +112,25 @@
         </section>
         <section id="projects">
             <header class="header-title"><b>PROJETOS</b></header>
+            <div class="grid-container">
+                <div class="grid-item project-item">CRIPTOGRAFIA AES</div>
+                <div class="grid-item project-item">aaa</div>
+                <div class="grid-item project-item">aaa</div>
+            </div>
         </section>
 
         <script>
             //navbar
             var prevScrollpos = window.pageYOffset;
             window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-100px";
-            }
-            prevScrollpos = currentScrollPos;
-            }
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-100px";
+                }
+                    prevScrollpos = currentScrollPos;
+                }
         </script>
     </body>
 </html>

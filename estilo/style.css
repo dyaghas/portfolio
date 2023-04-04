@@ -48,7 +48,7 @@ body {
 
 section {
     text-align: left;
-    padding: 40px 40px 40px 80px;
+    padding: 40px 40px 40px 40px;
 }
 
 .intro-section {
@@ -85,4 +85,29 @@ circle {
     transform: translate(-50%,-50%);
     color: #C98C00;
     font-size: 20px;
+}
+
+.grid-container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.grid-item {
+    margin: 2px;
+    transition: 0.3s;
+    background-color: #1c1c1c;
+}
+
+.grid-item:hover {
+    color: #fcb103;
+}
+
+#projects {
+    text-align: center;
+}
+
+.project-item {
+    padding: 0px;
+    font-size: 25px;
 }
