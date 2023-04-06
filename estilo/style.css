@@ -47,6 +47,14 @@ body {
     text-align: center;
 }
 
+.header-stripe {
+    padding: 20px 0px 20px 0px;
+    font-size: 30px;
+    background-color: #fcb103;
+    color: black;
+    text-align: center;
+}
+
 section {
     text-align: center;
     padding: 40px 40px 40px 40px;
@@ -72,7 +80,7 @@ circle {
 .circle-box {
     width: 25%;
     font-size: 30px;
-    color: black;
+    color: #0a0a0a;
     text-align: center;
 }
 
@@ -143,6 +151,17 @@ circle {
 
 .project-label {
     font-size: 15px;
+}
+
+.content {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 800px;
+    background-color: #0a0a0a;
 }
 
 .certificate-label {

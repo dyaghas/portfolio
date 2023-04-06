@@ -38,7 +38,9 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="130"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" 
+                                stroke-dasharray="400" stroke-dashoffset="130"
+                            />
                         </svg>
                         <span>Java</span>
                     </div>
@@ -47,7 +49,9 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="163"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" 
+                                stroke-dasharray="400" stroke-dashoffset="163"
+                            />
                         </svg>
                         <span>Python</span>
                     </div>
@@ -56,7 +60,9 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="163"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" 
+                                stroke-dasharray="400" stroke-dashoffset="163"
+                            />
                         </svg>
                         <span>Android</span>
                     </div>
@@ -65,7 +71,9 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="243"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" 
+                                stroke-dasharray="400" stroke-dashoffset="243"
+                            />
                         </svg>
                         <span>SQL</span>
                     </div>
@@ -74,7 +82,9 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="243"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" 
+                                stroke-dasharray="400" stroke-dashoffset="243"
+                            />
                         </svg>
                         <span>Git</span>
                     </div>
@@ -83,7 +93,9 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="243"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" 
+                                stroke-dasharray="400" stroke-dashoffset="243"
+                            />
                         </svg>
                         <span>Web</span>
                     </div>
@@ -92,7 +104,9 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="300"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" 
+                                stroke-dasharray="400" stroke-dashoffset="300"
+                            />
                         </svg>
                         <span>Linux</span>
                     </div>
@@ -101,7 +115,9 @@
                     <div>
                         <svg>
                             <circle cx="100" cy="100" r="50" stroke="black"/>
-                            <circle cx="100" cy="100" r="50" stroke="#fcb103" stroke-dasharray="400" stroke-dashoffset="300"/>
+                            <circle cx="100" cy="100" r="50" stroke="#fcb103" 
+                                stroke-dasharray="400" stroke-dashoffset="300"
+                            />
                         </svg>
                         <span>Jira</span>
                     </div>
@@ -111,24 +127,36 @@
         <section id="projects">
             <header class="header-title"><b>PROJETOS</b></header>
             <div class="grid-container">
-                <a class="project-item" href="https://github.com/dyaghas/aps-criptografia-aes">CRIPTOGRAFIA AES<br>
+                <a class="project-item" href="#project-title" id="project1"
+                    onclick="changeProjectWindow(this.id)">CRIPTOGRAFIA AES<br>
                     <span class="project-label">Desenvolvido em Python</span>
                 </a>
-                <a class="project-item" href="https://github.com/dyaghas/to-do-app">TO DO<br>
+                <a class="project-item" href="#project-title" id="project2"
+                    onclick="changeProjectWindow(this.id)">TO DO<br>
                     <span class="project-label">Aplicativo Mobile</span>
                 </a>
-                <a class="project-item" href="https://github.com/dyaghas/tic-tac-toe-app">JOGO DA VELHA<br>
+                <a class="project-item" href="#project-title" id="project3"
+                    onclick="changeProjectWindow(this.id)">JOGO DA VELHA<br>
                     <span class="project-label">Aplicativo Mobile</span>
                 </a>
-                <a class="project-item" href="https://github.com/MatheusPiechottka/APS_Unip">ECLIPSE<br>
+                <a class="project-item" href="#project-title" id="project4"
+                    onclick="changeProjectWindow(this.id)">ECLIPSE<br>
                     <span class="project-label">Página Web</span>
                 </a>
-                <a class="project-item" href="">5<br>
+                <a class="project-item" href="#project-title" id="project5"
+                    onclick="changeProjectWindow(this.id)">5<br>
                     <span class="project-label">Legenda</span>
                 </a>
-                <a class="project-item" href="">6<br>
+                <a class="project-item" href="#project-title" id="project6"
+                    onclick="changeProjectWindow(this.id)">6<br>
                     <span class="project-label">Legenda</span>
                 </a>
+            </div>
+            <br><br><br>
+            <div class="content">
+                <header class="header-stripe" id="project-title">
+                    <b>Clique em um projeto acima</b>
+                </header>
             </div>
         </section>
         <section id="certificates">
@@ -164,7 +192,6 @@
                 </a>
             </p>
 		</footer>
-
         <script>
             //navbar
             var prevScrollpos = window.pageYOffset;
@@ -177,6 +204,11 @@
                 }
                     prevScrollpos = currentScrollPos;
                 }
+
+            //projects window
+            function changeProjectWindow(button_id) {
+                document.getElementById("project-title").innerHTML = document.getElementById(button_id).innerHTML.bold();
+            }
         </script>
     </body>
 </html>
