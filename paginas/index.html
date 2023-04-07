@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../estilo/style.css">
+        <script src="../script/script.js"></script>
         <title>Gustavo Cristian</title>
     </head>
     <body>
@@ -153,10 +154,58 @@
                 </a>
             </div>
             <br><br><br>
-            <div class="content">
+            <div class="project-window">
                 <header class="header-stripe" id="project-title">
                     <b>Clique em um projeto acima</b>
                 </header>
+                <div class="project-content" id="project-content1">
+                    Esse projeto foi realizado como um trabalho semestral para a faculdade UNIP com o objetivo de entender
+                    o funcionamento da Advanced Encryption Standard (AES), uma das mais utilizadas e consolidadas na área 
+                    da cibersegurança. Através do código desenvolvido por nós com base em documentos e fontes na internet, 
+                    foi possível entender como a mensagem é alterada durante todo o processo, formando o texto cifrado. 
+                    Foi escolhido a chave de 128 bits devido a sua praticidade, já que esse algoritmo não será implementado
+                    em nenhuma situação real.
+                </div>
+                <div class="project-content" id="project-content2">
+                    Esse projeto foi realizado como um trabalho semestral para a faculdade UNIP com o objetivo de entender
+                    o funcionamento da Advanced Encryption Standard (AES), uma das mais utilizadas e consolidadas na área 
+                    da cibersegurança. Através do código desenvolvido por nós com base em documentos e fontes na internet, 
+                    foi possível entender como a mensagem é alterada durante todo o processo, formando o texto cifrado. 
+                    Foi escolhido a chave de 128 bits devido a sua praticidade, já que esse algoritmo não será implementado
+                    em nenhuma situação real.
+                </div>
+                <div class="project-content" id="project-content3">
+                    Esse projeto foi realizado como um trabalho semestral para a faculdade UNIP com o objetivo de entender
+                    o funcionamento da Advanced Encryption Standard (AES), uma das mais utilizadas e consolidadas na área 
+                    da cibersegurança. Através do código desenvolvido por nós com base em documentos e fontes na internet, 
+                    foi possível entender como a mensagem é alterada durante todo o processo, formando o texto cifrado. 
+                    Foi escolhido a chave de 128 bits devido a sua praticidade, já que esse algoritmo não será implementado
+                    em nenhuma situação real.
+                </div>
+                <div class="project-content" id="project-content4">
+                    Esse projeto foi realizado como um trabalho semestral para a faculdade UNIP com o objetivo de entender
+                    o funcionamento da Advanced Encryption Standard (AES), uma das mais utilizadas e consolidadas na área 
+                    da cibersegurança. Através do código desenvolvido por nós com base em documentos e fontes na internet, 
+                    foi possível entender como a mensagem é alterada durante todo o processo, formando o texto cifrado. 
+                    Foi escolhido a chave de 128 bits devido a sua praticidade, já que esse algoritmo não será implementado
+                    em nenhuma situação real.
+                </div>
+                <div class="project-content" id="project-content5">
+                    Esse projeto foi realizado como um trabalho semestral para a faculdade UNIP com o objetivo de entender
+                    o funcionamento da Advanced Encryption Standard (AES), uma das mais utilizadas e consolidadas na área 
+                    da cibersegurança. Através do código desenvolvido por nós com base em documentos e fontes na internet, 
+                    foi possível entender como a mensagem é alterada durante todo o processo, formando o texto cifrado. 
+                    Foi escolhido a chave de 128 bits devido a sua praticidade, já que esse algoritmo não será implementado
+                    em nenhuma situação real.
+                </div>
+                <div class="project-content" id="project-content6">
+                    Esse projeto foi realizado como um trabalho semestral para a faculdade UNIP com o objetivo de entender
+                    o funcionamento da Advanced Encryption Standard (AES), uma das mais utilizadas e consolidadas na área 
+                    da cibersegurança. Através do código desenvolvido por nós com base em documentos e fontes na internet, 
+                    foi possível entender como a mensagem é alterada durante todo o processo, formando o texto cifrado. 
+                    Foi escolhido a chave de 128 bits devido a sua praticidade, já que esse algoritmo não será implementado
+                    em nenhuma situação real.
+                </div>
             </div>
         </section>
         <section id="certificates">
@@ -192,23 +241,5 @@
                 </a>
             </p>
 		</footer>
-        <script>
-            //navbar
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                    document.getElementById("navbar").style.top = "0";
-                } else {
-                    document.getElementById("navbar").style.top = "-100px";
-                }
-                    prevScrollpos = currentScrollPos;
-                }
-
-            //projects window
-            function changeProjectWindow(button_id) {
-                document.getElementById("project-title").innerHTML = document.getElementById(button_id).innerHTML.bold();
-            }
-        </script>
     </body>
 </html>

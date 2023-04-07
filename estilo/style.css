@@ -153,15 +153,20 @@ circle {
     font-size: 15px;
 }
 
-.content {
-    width: 100vw;
+.project-window {
+    width: 99.4vw;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
-    margin-right: -50vw;
-    height: 800px;
+    height: fit-content;
     background-color: #0a0a0a;
+    text-align: left;
+}
+
+.project-content {
+    display: none;
+    padding: 30px 30px 30px 30px;
 }
 
 .certificate-label {
