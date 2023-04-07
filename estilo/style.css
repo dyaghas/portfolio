@@ -28,16 +28,31 @@ body {
 }
 
 .nav-text:hover {
-    color: #9c6d00
+    color: #9c6d00;
 }
 
 .big-bold-text {
     font-size: 80px;
     color: #fcb103;
+    animation-name: text-fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes text-fade-in {
+    from {
+        position: relative;
+        left: -1000px;
+    }
+    to {
+        position: relative;
+        left: 0px;
+    }
 }
 
 #intro-text {
     width: 50%;
+    animation-name: text-fade-in;
+    animation-duration: 1.3s;
 }
 
 .header-title {
@@ -63,6 +78,8 @@ section {
 .intro-section {
     text-align: left;
     padding: 200px 40px 40px 80px;
+    animation-name: text-fade-in;
+    animation-duration: 1s;
 }
 
 svg {
