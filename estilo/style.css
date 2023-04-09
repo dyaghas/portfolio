@@ -183,17 +183,37 @@ circle {
 
 .project-content {
     display: none;
-    padding: 30px 30px 30px 30px;
+    justify-content: space-around;
+	align-items: center;
+    padding: 60px 30px 60px 30px;
 }
 
 .project-content-text {
     width: 50%;
 }
 
-.github-hyperlink {
+.project-content img {
+    border-radius: 5px;
+}
+
+.bp-title {
     color: #fcb103;
+    font-size: 20px;
+}
+
+.github-hyperlink {
+    transition: 0.3s;
+    background-color: #fcb103;
+    color: black;
+    padding: 20px 20px 20px 20px;
     text-decoration: none;
     font-size: 20px;
+    border-radius: 5px;
+}
+
+.github-hyperlink:hover {
+    background-color: black;
+    color: #fcb103;
 }
 
 .certificate-label {

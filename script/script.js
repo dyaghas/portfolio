@@ -29,22 +29,22 @@ function showProjectWindow(button_id) {
     document.getElementById("project-title").innerHTML = document.getElementById(button_id).innerHTML.bold();
     switch(button_id) {
         case "project1":
-            document.getElementById("project-content1").style.display = "block";
+            document.getElementById("project-content1").style.display = "flex";
             break;
         case "project2":
-        document.getElementById("project-content2").style.display = "block";
+        document.getElementById("project-content2").style.display = "flex";
             break;
         case "project3":
-        document.getElementById("project-content3").style.display = "block";
+        document.getElementById("project-content3").style.display = "flex";
             break;
         case "project4":
-        document.getElementById("project-content4").style.display = "block";
+        document.getElementById("project-content4").style.display = "flex";
             break;
         case "project5":
-        document.getElementById("project-content5").style.display = "block";
+        document.getElementById("project-content5").style.display = "flex";
             break;
         case "project6":
-        document.getElementById("project-content6").style.display = "block";
+        document.getElementById("project-content6").style.display = "flex";
             break;
     }
 }
