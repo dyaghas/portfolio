@@ -34,11 +34,11 @@ body {
 .big-bold-text {
     font-size: 80px;
     color: #fcb103;
-    animation-name: text-fade-in;
+    animation-name: text-slide;
     animation-duration: 1s;
 }
 
-@keyframes text-fade-in {
+@keyframes text-slide {
     from {
         position: relative;
         left: -1000px;
@@ -51,7 +51,7 @@ body {
 
 #intro-text {
     width: 50%;
-    animation-name: text-fade-in;
+    animation-name: text-slide;
     animation-duration: 1.3s;
 }
 
@@ -78,7 +78,7 @@ section {
 .intro-section {
     text-align: left;
     padding: 200px 40px 40px 80px;
-    animation-name: text-fade-in;
+    animation-name: text-slide;
     animation-duration: 1s;
 }
 
@@ -186,14 +186,17 @@ circle {
     justify-content: space-around;
 	align-items: center;
     padding: 60px 30px 60px 30px;
+    animation-name: text-slide;
+    animation-duration: 1s;
 }
 
 .project-content-text {
     width: 50%;
 }
 
-.project-content img {
+.project-image {
     border-radius: 5px;
+    max-width: 600px;
 }
 
 .bp-title {
@@ -246,9 +249,34 @@ footer {
 }
 
 @media (max-width: 1024px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
     .nav-btn {
         padding: 10px 30px 10px 30px;
         font-size: 12px;
+    }
+
+    .big-bold-text {
+        font-size: 60px;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 30px 30px 30px 30px;
+    }
+    
+    .intro-section {
+        padding: 125px 30px 30px 60px;
     }
 
     .circle-box {
@@ -271,12 +299,40 @@ footer {
     .certificate-label {
         font-size: 10px;
     }
+
+    .project-image {
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 700px) {
+    body {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
     .nav-btn {
         padding: 7px 20px 7px 20px;
         font-size: 10px;
+    }
+
+    .big-bold-text {
+        font-size: 40px;
+    }
+
+    .header-title {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .intro-section {
+        padding: 75px 20px 20px 40px;
     }
 
     .circle-box {
@@ -298,5 +354,9 @@ footer {
 
     .certificate-label {
         font-size: 7px;
+    }
+
+    .project-image {
+        max-width: 200px;
     }
 }
