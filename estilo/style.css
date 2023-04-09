@@ -186,6 +186,16 @@ circle {
     padding: 30px 30px 30px 30px;
 }
 
+.project-content-text {
+    width: 50%;
+}
+
+.github-hyperlink {
+    color: #fcb103;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 .certificate-label {
     font-size: 15px;
 }
