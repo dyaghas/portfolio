@@ -90,7 +90,7 @@ svg {
 } 
   
 circle {
-    stroke-width:10px;
+    stroke-width:6px;
     fill:none;    
 }
 
@@ -111,7 +111,7 @@ circle {
     top:50%;
     transform: translate(-50%,-50%);
     color: #C98C00;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .grid-container {
@@ -226,7 +226,7 @@ circle {
 footer {
     padding: 30px 10px 30px 10px;
     text-align: center;
-    box-shadow: 7px 7px 4px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: -7px -10px 4px 2px rgba(0, 0, 0, 0.1);
     background-color: #1c1c1c;
     color: white;
 }
@@ -296,12 +296,38 @@ footer {
         font-size: 10px;
     }
 
+    .header-stripe {
+        font-size: 20px;
+        max-height: 200px;
+    }
+
     .certificate-label {
         font-size: 10px;
     }
 
     .project-image {
         max-width: 300px;
+    }
+
+    .bp-title {
+        font-size: 17px;
+    }
+
+    .github-hyperlink {
+        padding: 15px 15px 15px 15px;
+        font-size: 15px;
+    }
+
+    footer {
+        padding: 20px 10px 20px 10px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        max-width: 40px;
     }
 }
 
@@ -352,11 +378,37 @@ footer {
         font-size: 7px;
     }
 
+    .header-stripe {
+        font-size: 15px;
+        max-height: 150px;
+    }
+
     .certificate-label {
         font-size: 7px;
     }
 
     .project-image {
         max-width: 200px;
+    }
+
+    .bp-title {
+        font-size: 14px;
+    }
+
+    .github-hyperlink {
+        padding: 12px 12px 12px 12px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 15px 10px 15px 10px;
+    }
+
+    footer h3 {
+        font-size: 17px;
+    }
+
+    .footer-logo {
+        max-width: 30px;
     }
 }
