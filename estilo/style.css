@@ -4,6 +4,10 @@ body {
     color: white;
 }
 
+.yellow-text {
+    color: #fcb103;
+}
+
 .nav {
     transition: top 0.3s;
     background-color: #fcb103;
@@ -50,7 +54,6 @@ body {
 }
 
 #intro-text {
-    width: 50%;
     animation-name: text-slide;
     animation-duration: 1.3s;
 }
@@ -76,10 +79,21 @@ section {
 }
 
 .intro-section {
+    display: table-row;
+}
+
+.intro-div {
+    display: table-cell;
+    width: 50%;
     text-align: left;
-    padding: 200px 40px 40px 80px;
+    padding: 40px 40px 40px 80px;
     animation-name: text-slide;
     animation-duration: 1s;
+}
+
+#profile-photo {
+    margin-top: 280px;
+    width: 90%;
 }
 
 svg {
