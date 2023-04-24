@@ -91,6 +91,8 @@ section {
 .project-div {
     padding: 20px 20px 20px 20px;
 }
+
+/*project content shape*/
 .project-tab {
     height: 20px;
     width: 160px;
@@ -101,6 +103,8 @@ section {
     border-top-right-radius: 25px;
     color: #A55EEA;
     text-align: center;
+    opacity: 0.8;
+    filter: drop-shadow(3px 0px 10px #000000);
 }
 .project-content {
     position: relative;
@@ -113,7 +117,10 @@ section {
     border-color: #00A8E8;
     border-radius: 25px;
     border-top-left-radius: 0px;
+    filter: drop-shadow(3px 0px 10px #000000);
 }
+
+
 .project-content-title {
     position:absolute;
     top: 0;
