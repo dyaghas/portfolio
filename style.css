@@ -10,6 +10,10 @@ body {
 
 /*navbar*/
 .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     text-align: center;
     transition: top 0.3s;
     background-color: #0D1217;
@@ -99,12 +103,59 @@ section {
     text-align: center;
 }
 .project-content {
+    position: relative;
     height: 200px;
     width: 300px;
+    font-size: 15px;
     background-color: #25323F;
     border-style: solid;
     border-width: thin;
     border-color: #00A8E8;
     border-radius: 25px;
     border-top-left-radius: 0px;
+}
+.project-content-title {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 300px;
+    padding: 15px 15px 0px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(25deg, #A55EEA, #00A8E8 20%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.project-content-desc {
+    position:absolute;
+    top: 85px;
+    left: 0;
+    padding: 0px 15px 0px 15px;
+}
+.project-content-bottom {
+    display: table-row;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 300px;
+    padding: 0px 0px 10px 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    line-height: 40px;
+}
+.project-content-bottom-left {
+    display: table-cell;
+    width: 230px;
+}
+.project-content-bottom-right {
+    display: table-cell;
+    text-align: right;
+    align-self: right;
+    width: 24px;
+}
+.project-btn {
+    height: 26px;
 }
