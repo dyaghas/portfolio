@@ -3,6 +3,9 @@ body {
     background-color: #131B23;
     margin: 0px;
     color: #CCCCCC;
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /*navbar*/
@@ -27,27 +30,38 @@ body {
 }
 
 .content {
-    padding: 160px 80px 40px 80px;
+    padding: 160px 160px 40px 160px;
 }
 
 /*section*/
 section {
     display: table-row;
+    padding: 0px 400px 0px 400px;
 }
 #opening {
     padding-top: 160px;
 }
-.section-content {
+.section-content-half {
     display: table-cell;
-    width: 50%;
     vertical-align: middle;
+    width: 50%;
+}
+.section-content-full {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
 }
 .title {
     font-size: 30px;
     font-weight: bold;
-    background: -webkit-linear-gradient(25deg, #A55EEA 2%, #00A8E8);
+    background: -webkit-linear-gradient(25deg, #A55EEA, #00A8E8 50%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.text {
+    text-align: justify;
+    text-justify: inter-word;
 }
 .section-image {
     display: table-cell;
