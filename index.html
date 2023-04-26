@@ -43,7 +43,7 @@
             <img class="half-width-image" src="images/profile-photo-no-bg.png">
             </div>
         </section>
-        <br>
+        <div class="section-division">▼ &nbsp&nbsp Role para baixo &nbsp&nbsp ▼</div>
         <section id="about">
             <div class="section-content-full">
                 <div class="container">
@@ -250,15 +250,26 @@
             Precisando entrar em contato comigo?<br><br><br>
             <div id="contact-div">
                 Mídias sociais<br>
-                <button class="contact-btn" type="submit">
-                    <img class="contact-btn-img" src="images/github-mark-white.svg">
-                </button>
-                <button class="contact-btn" type="submit">
-                    <img class="contact-btn-img" src="images/linkedin-logo.svg">
-                </button>
+                <a href="https://github.com/dyaghas">
+                    <button class="contact-btn" type="submit">
+                        <img class="contact-btn-img" src="images/github-mark-white.svg">
+                    </button>
+                </a>
+                <a href="https://www.linkedin.com/in/gustavo-cristian/">
+                    <button class="contact-btn" type="submit">
+                        <img class="contact-btn-img" src="images/linkedin-logo.svg">
+                    </button>
+                </a>
                 <br>
-                E-mail<br><br><br>
-                diamonddyaghas@gmail.com
+                <hr><br>
+                <b>E-mail</b><br><br><br>
+                <span id="contact-email">diamonddyaghas@gmail.com</span><br><br>
+                <button id="copy-email-btn" onclick="copyToClipboard()">Copiar</button>
+                <hr><br>
+                <b>Currículo</b><br><br><br>
+                <a href="curriculo-principal.pdf" download="" target="_blank">
+                    <button id="download-resume-btn"><b>Abrir</b></button>
+                </a>
             </div>
         </section>
     </div>
