@@ -38,13 +38,17 @@ body {
 .content {
     padding: 160px 160px 40px 160px;
 }
-section {
-    display: table-row;
-    padding: 40px 400px 40px 400px;
-}
 .section-division {
     padding: 180px 0px 180px 0px;
     text-align: center;
+}
+.container {
+    position: relative;
+}
+.anchor {
+    position: absolute;
+    top: -75px;
+    left: 0px;
 }
 
 /*opening section*/
@@ -215,4 +219,23 @@ section {
     margin: 14px;
     border-radius: 10px;
     background-color: #131B23;
+}
+
+/*contact*/
+#contact-div {
+    text-align: center;
+}
+.contact-btn {
+    height: 100px;
+    width: 100px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    margin: 60px 10px 60px 20px;
+    background-color: #162029;
+    filter: drop-shadow(0px 5px 15px #000000);
+}
+.contact-btn-img {
+    height: 50%;
 }

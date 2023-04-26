@@ -9,27 +9,30 @@
     <div class="nav navbar-expand-sm sticky-top d-flex">
         <div class="nav-row">
             <div class="nav-btn">
-                <a href="#opening" class="nav-text">Início</a>
+                <a href="#opening-anchor" class="nav-text">Início</a>
             </div>
             <div class="nav-btn">
-                <a href="#about" class="nav-text">Sobre</a>
+                <a href="#about-anchor" class="nav-text">Sobre</a>
             </div>
             <div class="nav-btn">
-                <a href="#projects" class="nav-text">Projetos</a>
+                <a href="#projects-anchor" class="nav-text">Projetos</a>
             </div>
             <div class="nav-btn">
-                <a href="#skills" class="nav-text">Habilidades</a>
+                <a href="#skills-anchor" class="nav-text">Habilidades</a>
             </div>
             <div class="nav-btn">
-                <a href="#contact" class="nav-text">Contato</a>
+                <a href="#contact-anchor" class="nav-text">Contato</a>
             </div>
         </div>
     </div>
     <div class="content">
         <section id="opening">
             <div class="section-content-half">
-                <span class="title">Gustavo Cristian</span>
-                <br><br>
+                <div class="container">
+                    <span class="title">Gustavo Cristian</span>
+                    <a class="anchor" name="opening-anchor"></a>
+                </div>
+                <br>
                 <span class="text">
                     Estudante de ciência da computação e desenvolvedor com experiência em Java, Android e Python, 
                     realizei diversos projetos como aplicativos de lembretes, cálculo, criptografia, jogos entre outros. 
@@ -43,8 +46,11 @@
         <br>
         <section id="about">
             <div class="section-content-full">
-                <span class="title">Sobre mim</span>
-                <br><br>
+                <div class="container">
+                    <span class="title">Sobre mim</span>
+                    <a class="anchor" name="about-anchor"></a>
+                </div>
+                <br>
                 <span class="text">
                     Nasci no dia 2 de abril de 2003 e moro em Campinas, São Paulo. Desde criança sempre demonstrei interesse por tecnologia, 
                     gostava de desmontar computadores e navegar pelo explorador de arquivos do Windows, mesmo sem entender muita coisa. 
@@ -55,7 +61,10 @@
         </section>
         <div class="section-division">▼ &nbsp&nbsp Role para baixo &nbsp&nbsp ▼</div>
         <section id="projects">
-            <span class="title">Meus projetos</span>
+            <div class="container">
+                <span class="title">Gustavo Cristian</span>
+                <a class="anchor" name="projects-anchor"></a>
+            </div>
             <br><br><br>
             <div id="projects-grid">
                 <div class="project-div">
@@ -157,9 +166,12 @@
             </div>
         </section>
         <div class="section-division">▼ &nbsp&nbsp Role para baixo &nbsp&nbsp ▼</div>
-        <section id="skills"></section>
-            <span class="title">Habilidades e experiência</span>
-            <br><br><br><br>
+        <section id="skills">
+            <div class="container">
+                <span class="title">Habilidades e experiência</span>
+                <a class="anchor" name="skills-anchor"></a>
+            </div>
+            <br><br><br>
             <div id="skills-grid">
                 <div class="skills-item" id="skills-item1">
                     <div class="skill-name-div">
@@ -228,7 +240,27 @@
                     </div>
                 </div>
             </div>
-        <section id="contact"></section>
+        </section>
+        <div class="section-division">▼ &nbsp&nbsp Role para baixo &nbsp&nbsp ▼</div>
+        <section id="contact">
+            <div class="container">
+                <span class="title">Contato</span>
+                <a class="anchor" name="contact-anchor"></a>
+            </div><br><br>
+            Precisando entrar em contato comigo?<br><br><br>
+            <div id="contact-div">
+                Mídias sociais<br>
+                <button class="contact-btn" type="submit">
+                    <img class="contact-btn-img" src="images/github-mark-white.svg">
+                </button>
+                <button class="contact-btn" type="submit">
+                    <img class="contact-btn-img" src="images/linkedin-logo.svg">
+                </button>
+                <br>
+                E-mail<br><br><br>
+                diamonddyaghas@gmail.com
+            </div>
+        </section>
     </div>
 </body>
 </html>
