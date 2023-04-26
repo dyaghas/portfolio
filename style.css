@@ -1,0 +1,323 @@
+body {
+    font-family: arial;
+    background-color: #131B23;
+    margin: 0px;
+    color: #CCCCCC;
+    font-size: 1.4vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/*animations*/
+@keyframes text-slide {
+    from {
+        position: relative;
+        left: -1000px;
+    }
+    to {
+        position: relative;
+        left: 0px;
+    }
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*navbar*/
+.nav {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: top 0.3s;
+    background-color: #0D1217;
+    filter: drop-shadow(3px 3.2px 10px #000000);
+    font-size: 1vw;
+}
+.nav-row {
+    overflow: hidden;
+    transition: top 0.3s;
+}
+.nav-btn {
+    display: inline-block;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+}
+.nav-text {
+    color: #F7F7FF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-text:hover {
+    color: #00A8E8;
+}
+.nav-text:active {
+    color: #F7F7FF
+}
+
+/*content*/
+.content {
+    padding: 0px 160px 40px 160px;
+}
+.section-division {
+    padding: 180px 0px 180px 0px;
+    text-align: center;
+}
+.container {
+    position: relative;
+}
+.anchor {
+    position: absolute;
+    top: -120px;
+    left: 0px;
+}
+
+/*opening section*/
+#opening {
+    padding-top: 160px;
+}
+.section-content-half {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+.section-content-full {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.title {
+    font-size: 2.2vw;
+    font-weight: bold;
+    background: -webkit-linear-gradient(25deg, #A55EEA, #00A8E8 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-slide;
+    animation-duration: 1.2s;
+}
+.text {
+    text-align: justify;
+    text-justify: inter-word;
+    animation: text-slide;
+    animation-duration: 1s;
+}
+.section-image {
+    display: table-cell;
+    width: 50%;
+    text-align: center;
+}
+.half-width-image {
+    width: 50%;
+    border-radius: 100%;
+    border: 3px solid transparent;
+    background: linear-gradient(#131B23, #131B23) padding-box,
+                linear-gradient(to top, #00A8E8, #A55EEA) border-box;
+    animation: fade-in;
+    animation-duration: 2s;
+}
+
+/*projects section*/
+#projects-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+.project-div {
+    padding: 20px 20px 20px 20px;
+}
+
+/*project content shape*/
+.project-tab {
+    height: 20px;
+    width: 160px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #A55EEA;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: #A55EEA;
+    text-align: center;
+    opacity: 0.8;
+    filter: drop-shadow(3px 0px 10px #000000);
+}
+.project-content {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    font-size: 15px;
+    background-color: #25323F;
+    border-style: solid;
+    border-width: thin;
+    border-color: #00A8E8;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    filter: drop-shadow(3px 0px 10px #000000);
+}
+
+.project-content-title {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 300px;
+    padding: 15px 15px 0px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(25deg, #A55EEA, #00A8E8 20%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.project-content-desc {
+    position:absolute;
+    top: 85px;
+    left: 0;
+    padding: 0px 15px 0px 15px;
+}
+.project-content-bottom {
+    display: table-row;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 300px;
+    padding: 0px 0px 10px 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    line-height: 40px;
+}
+.project-content-bottom-left {
+    display: table-cell;
+    width: 230px;
+}
+.project-content-bottom-right {
+    display: table-cell;
+    text-align: right;
+    align-self: right;
+    width: 24px;
+}
+.project-btn {
+    height: 26px;
+}
+
+/*skills section*/
+#skills-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    row-gap: 60px;
+}
+.skills-item {
+    line-height: 35px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+#skills-item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#skills-item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+#skills-item3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    align-self: center;
+}
+.skill-name-div {
+    display: grid;
+}
+.skill-name {
+    display: flex;
+    align-items: center;
+}
+.skill-bars-div {
+    display: grid;
+}
+.skill-bar {
+    display: flex;
+    align-items: center;
+    margin: 14px;
+    border-radius: 10px;
+    background-color: #25323F;
+}
+.skill-bar-invisible {
+    display: flex;
+    align-items: center;
+    margin: 14px;
+    border-radius: 10px;
+    background-color: #131B23;
+}
+
+/*contact*/
+#contact-div {
+    text-align: center;
+}
+.contact-btn {
+    height: 100px;
+    width: 100px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    margin: 60px 10px 60px 20px;
+    background-color: #162029;
+    filter: drop-shadow(0px 5px 15px #000000);
+    transition: 0.3s;
+}
+.contact-btn:hover {
+    background-color: #131B23;
+}
+.contact-btn:active {
+    background-color: #162029;
+}
+.contact-btn-img {
+    height: 50%;
+}
+#copy-email-btn {
+    background-color: #131B23;
+    border: 1px solid #CCCCCC;
+    border-radius: 15px;
+    color: #CCCCCC;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+#copy-email-btn:hover {
+    background-color: #25323F;
+}
+#copy-email-btn:active {
+    background-color: #131B23;
+}
+hr {
+    border: none;
+    border-top: 5px solid #162029;
+}
+#download-resume-btn {
+    background-color: #162029;
+    border: 1px solid #00A8E8;
+    border-radius: 15px;
+    color: #CCCCCC;
+    font-size: 1.2vw;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+#download-resume-btn:hover {
+    background-color: #131B23;
+    color: #00A8E8;
+    border: 1px solid #CCCCCC;
+}
+#download-resume-btn:active {
+    background-color: #162029;
+    color: #CCCCCC;
+    border: 1px solid #00A8E8;
+}
