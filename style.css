@@ -321,3 +321,265 @@ hr {
     color: #CCCCCC;
     border: 1px solid #00A8E8;
 }
+
+@media screen and (min-width: 1920px) {
+    .nav-btn {
+        padding: 25px 25px 25px 25px;
+    }
+
+    .content {
+        padding: 0px 230px 80px 230px;
+    }
+    .section-division {
+        padding: 270px 0px 270px 0px;
+    }
+
+    .project-div {
+        padding: 30px 30px 30px 30px;
+    }
+
+    /*opening section*/
+    #opening {
+        padding-top: 240px;
+    }
+
+    /*projects section*/
+    .project-div {
+        padding: 30px 30px 30px 30px;
+    }
+
+    /*project content shape*/
+    .project-tab {
+        height: 30px;
+        width: 240px;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+    }
+    .project-content {
+        height: 300px;
+        width: 450px;
+        border-radius: 35px;
+        border-top-left-radius: 0px;
+        font-size: 22px;
+    }
+    
+    .project-content-title {
+        height: 60px;
+        width: 450px;
+        padding: 25px 25px 0px 25px;
+        font-size: 27px;
+    }
+    .project-content-desc {
+        top: 125px;
+        padding: 0px 25px 0px 25px;
+    }
+    .project-content-bottom {
+        height: 60px;
+        width: 450px;
+        padding: 0px 0px 15px 25px;
+        line-height: 60px;
+    }
+    .project-content-bottom-left {
+        width: 345px;
+    }
+    .project-content-bottom-right {
+        width: 36px;
+    }
+    .project-btn {
+        height: 39px;
+    }
+
+    /*skills section*/
+    #skills-grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 15px;
+        row-gap: 60px;
+    }
+    .skills-item {
+        line-height: 35px;
+    }
+    .skill-bar {
+        display: flex;
+        align-items: center;
+        margin: 14px;
+        border-radius: 10px;
+        background-color: #25323F;
+    }
+    .skill-bar-invisible {
+        display: flex;
+        align-items: center;
+        margin: 14px;
+        border-radius: 10px;
+        background-color: #131B23;
+    }
+
+    /*contact*/
+    .contact-btn {
+        height: 150px;
+        width: 150px;
+        border-radius: 32px;
+        margin: 90px 20px 90px 40px;
+        filter: drop-shadow(0px 7px 22px #000000);
+        transition: 0.3s;
+    }
+    #copy-email-btn {
+        border: 2px solid #CCCCCC;
+        border-radius: 22px;
+        font-size: 0.8vw;
+        padding: 18px 30px;
+        margin-bottom: 30px;
+    }
+    hr {
+        border-top: 7px solid #162029;
+    }
+    #download-resume-btn {
+        border: 2px solid #00A8E8;
+        border-radius: 22px;
+        color: #CCCCCC;
+        font-size: 1.2vw;
+        padding: 17px 35px;
+        margin-bottom: 30px;
+    }
+    #download-resume-btn:hover {
+        border: 2px solid #CCCCCC;
+    }
+    #download-resume-btn:active {
+        border: 2px solid #00A8E8;
+    }
+}
+
+@media screen and (min-width: 3800px) {
+
+    /*animations*/
+    @keyframes text-slide {
+        from {
+            position: relative;
+            left: -3000px;
+        }
+        to {
+            position: relative;
+            left: 0px;
+        }
+    }
+
+    .nav-btn {
+        padding: 35px 35px 35px 35px;
+    }
+
+    .content {
+        padding: 0px 430px 80px 430px;
+    }
+    .section-division {
+        padding: 480px 0px 480px 0px;
+    }
+
+    .project-div {
+        padding: 60px 60px 60px 60px;
+    }
+
+    /*opening section*/
+    #opening {
+        padding-top: 320px;
+    }
+
+    /*projects section*/
+    .project-div {
+        padding: 40px 40px 40px 40px;
+    }
+
+    /*project content shape*/
+    .project-tab {
+        height: 60px;
+        width: 480px;
+        border-top-left-radius: 75px;
+        border-top-right-radius: 75px;
+    }
+    .project-content {
+        height: 600px;
+        width: 900px;
+        border-radius: 75px;
+        border-top-left-radius: 0px;
+        font-size: 45px;
+    }
+    
+    .project-content-title {
+        height: 120px;
+        width: 900px;
+        padding: 45px 45px 0px 45px;
+        font-size: 54px;
+    }
+    .project-content-desc {
+        top: 255px;
+        padding: 0px 45px 0px 45px;
+    }
+    .project-content-bottom {
+        bottom: 0;
+        left: 0;
+        height: 120px;
+        width: 900px;
+        padding: 0px 0px 30px 45px;
+        line-height: 120px;
+    }
+    .project-content-bottom-left {
+        width: 690px;
+    }
+    .project-content-bottom-right {
+        width: 72px;
+    }
+    .project-btn {
+        height: 78px;
+    }
+
+    /*skills section*/
+    #skills-grid {
+        gap: 80px;
+        row-gap: 180px;
+    }
+    .skills-item {
+        line-height: 80px;
+        grid-template-columns: 25% 75%;
+    }
+    .skill-bar {
+        height: 25%;
+        margin: 14px;
+        border-radius: 10px;
+    }
+    .skill-bar-invisible {
+        height: 25%;
+        margin: 14px;
+        border-radius: 10px;
+    }
+
+    /*contact*/
+    .contact-btn {
+        height: 250px;
+        width: 250px;
+        border-radius: 50px;
+        margin: 120px 30px 120px 60px;
+        filter: drop-shadow(0px 10px 30px #000000);
+    }
+    #copy-email-btn {
+        border: 3px solid #CCCCCC;
+        border-radius: 40px;
+        font-size: 1vw;
+        padding: 30px 60px;
+        margin-bottom: 40px;
+    }
+    hr {
+        border-top: 7px solid #162029;
+    }
+    #download-resume-btn {
+        border: 3px solid #00A8E8;
+        border-radius: 40px;
+        font-size: 1.2vw;
+        padding: 40px 80px;
+        margin-bottom: 40px;
+    }
+    #download-resume-btn:hover {
+        border: 3px solid #CCCCCC;
+    }
+    #download-resume-btn:active {
+        border: 3px solid #00A8E8;
+    }
+}
