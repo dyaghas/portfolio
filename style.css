@@ -583,3 +583,148 @@ hr {
         border: 3px solid #00A8E8;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .nav-btn {
+        padding: 4px;
+    }
+
+    .content {
+        padding: 0px 23px 8px 23px;
+    }
+    .section-division {
+        padding: 27px 0px 27px 0px;
+    }
+
+    .project-div {
+        padding: 3px;
+    }
+
+    /*opening section*/
+    #opening {
+        padding-top: 60px;
+    }
+
+    /*projects section*/
+    .project-div {
+        padding: 8px;
+    }
+
+    /*project content shape*/
+    .project-tab {
+        height: 5px;
+        width: 52px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        filter: drop-shadow(3px 0px 5px #000000);
+    }
+    .project-content {
+        height: 70px;
+        width: 100px;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        font-size: 1vw;
+        filter: drop-shadow(3px 0px 5px #000000);
+    }
+    
+    .project-content-title {
+        height: 12px;
+        width: 100px;
+        padding: 5px 5px 0px 5px;
+        font-size: 1.6vw;
+    }
+    .project-content-desc {
+        top: 30px;
+        padding: 0px 5px 0px 5px;
+    }
+    .project-content-bottom {
+        height: 25px;
+        width: 90px;
+        padding: 0px 0px 0px 5px;
+        line-height: 30px;
+    }
+    .project-content-bottom-left {
+        width: 70px;
+    }
+    .project-content-bottom-right {
+        width: 15px;
+    }
+    .project-btn {
+        height: 12px;
+    }
+
+    /*skills section*/
+    #skills-grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 5px;
+        row-gap: 6px;
+    }
+    .skills-item {
+        line-height: 10px;
+        grid-template-columns: 10% 90%;
+    }
+    #skills-item1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 1;
+    }
+    #skills-item2 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 2;
+    }
+    #skills-item3 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 3;
+    }
+    .skill-bar {
+        display: flex;
+        align-items: center;
+        margin: 4px;
+        border-radius: 7px;
+        background-color: #25323F;
+    }
+    .skill-bar-invisible {
+        display: flex;
+        align-items: center;
+        margin: 4px;
+        border-radius: 7px;
+        background-color: #131B23;
+    }
+
+    /*contact*/
+    .contact-btn {
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        margin: 25px 8px 25px 16px;
+        filter: drop-shadow(0px 3px 7px #000000);
+        transition: 0.3s;
+    }
+    #copy-email-btn {
+        border: 1px solid #CCCCCC;
+        border-radius: 10px;
+        font-size: 1vw;
+        padding: 8px 16px;
+        margin-bottom: 30px;
+    }
+    hr {
+        border-top: 3px solid #162029;
+    }
+    #download-resume-btn {
+        border: 1px solid #00A8E8;
+        border-radius: 11px;
+        color: #CCCCCC;
+        font-size: 1.2vw;
+        padding: 9px 19px;
+        margin-bottom: 30px;
+    }
+    #download-resume-btn:hover {
+        border: 1px solid #CCCCCC;
+    }
+    #download-resume-btn:active {
+        border: 1px solid #00A8E8;
+    }
+}
