@@ -228,8 +228,13 @@ body {
     grid-column-end: 5;
 }
 #skills-item3 {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+}
+#skills-item4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
     align-self: center;
 }
 .skill-name-div {
@@ -260,6 +265,9 @@ body {
 /*contact*/
 #contact-div {
     text-align: center;
+}
+#contact-div a {
+    text-decoration: none;
 }
 .contact-btn {
     height: 100px;
