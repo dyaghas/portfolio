@@ -60,6 +60,14 @@ body {
 .nav-text:active {
     color: #F7F7FF
 }
+#language-btn-div {
+    text-align: center;
+}
+.language-btn {
+    display: inline-block;
+    width: 20px;
+    text-decoration: none;
+}
 
 /*content*/
 .content {

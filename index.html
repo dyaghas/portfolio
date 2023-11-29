@@ -7,35 +7,41 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="changeLanguage('pt-br')">
     <div class="nav navbar-expand-sm sticky-top d-flex">
         <div class="nav-row">
             <div class="nav-btn">
-                <a href="#opening-anchor" class="nav-text">Início</a>
+                <a href="#opening-anchor" class="nav-text" id="nav-about-btn" data-i18n="about">Sobre</a>
             </div>
             <div class="nav-btn">
-                <a href="#about-anchor" class="nav-text">Sobre</a>
+                <a href="#projects-anchor" class="nav-text" data-i18n="projects">Projetos</a>
             </div>
             <div class="nav-btn">
-                <a href="#projects-anchor" class="nav-text">Projetos</a>
+                <a href="#skills-anchor" class="nav-text" data-i18n="skills">Habilidades</a>
             </div>
             <div class="nav-btn">
-                <a href="#skills-anchor" class="nav-text">Habilidades</a>
+                <a href="#contact-anchor" class="nav-text" data-i18n="contact">Contato</a>
             </div>
-            <div class="nav-btn">
-                <a href="#contact-anchor" class="nav-text">Contato</a>
+            <div class="nav-btn" id="language-btn-div">
+                <a class="language-btn" id="language-pt-btn" href="#" onclick="changeLanguage('pt-br')">
+                    <img src="images/flag-br.svg" alt="Brazilian flag">
+                </a>
+                <a class="language-btn" id="language-en-btn" href="#" onclick="changeLanguage('en')">
+                    <img src="images/flag-us.svg" alt="United States flag">
+                </a>
             </div>
         </div>
     </div>
     <div class="content">
         <section id="opening">
+            <br><br>
             <div class="section-content-half">
                 <div class="container">
                     <span class="title">Gustavo Cristian</span>
                     <a class="anchor" name="opening-anchor"></a>
                 </div>
                 <br>
-                <span class="text">
+                <span class="text" data-i18n="about-text">
                     Estudante de ciência da computação e desenvolvedor com conhecimentos em Java, Android, Python e C. 
                     Realizei diversos projetos durante os meus estudos abordando temas como: desenvolvimento mobile,
                     CRUD e algoritmo de criptografia AES. 
@@ -46,15 +52,14 @@
             <img class="half-width-image" src="images/profile-photo-no-bg.png">
             </div>
         </section>
-        <div class="section-division">▼ &nbsp&nbsp Role para baixo &nbsp&nbsp ▼</div>
+        <div class="section-division" data-i18n="scroll-text">▼ Role para baixo ▼</div>
         <section id="about">
             <div class="section-content-full">
                 <div class="container">
-                    <span class="title">Sobre mim</span>
-                    <a class="anchor" name="about-anchor"></a>
+                    <span class="title" data-i18n="about">Sobre mim</span>
                 </div>
                 <br>
-                <span class="text">
+                <span class="text" data-i18n="about-text2">
                     Nasci no dia 2 de abril de 2003 e moro em Campinas, São Paulo. Desde criança sempre demonstrei interesse por tecnologia, 
                     gostava de desmontar computadores e navegar pelo explorador de arquivos do Windows, mesmo sem entender muita coisa. 
                     Hoje em dia meus principais interesses em TI são: 
@@ -62,24 +67,24 @@
                 </span>
             </div>
         </section>
-        <div class="section-division">▼ &nbsp&nbsp Role para baixo &nbsp&nbsp ▼</div>
+        <div class="section-division" data-i18n="scroll-text">▼ Role para baixo ▼</div>
 
         <section id="experience">
             <div class="container">
-                <span class="title">Experiência</span>
+                <span class="title" data-i18n="experience"></span>
             </div>
             <br><br><br>
             <div id="experience-grid">
                 <div class="experience-date-div">
-                    <span class="text experience-date-text">out 2023 - presente</span>
+                    <span class="text experience-date-text" data-i18n="experience-date1"></span>
                 </div>
                 <div class="experience-content-div">
-                    <span class="text">Estagiário de Suporte - UNICAMP</span>
+                    <span class="text" data-i18n="experience-title1">Estagiário de Suporte - UNICAMP</span>
                 </div>
                 <div>
                 </div>
                 <div>
-                    <span class="text experience-date-text">
+                    <span class="text experience-date-text" data-i18n="experience-text1">
                         Fazer manutenção e reparo em computadores, identificar problemas em máquinas, equipamentos eletrônicos e 
                         prestar suporte para funcionários, professores e alunos.
                     </span>
@@ -87,10 +92,10 @@
             </div>
         </section>
 
-        <div class="section-division">▼ &nbsp&nbsp Role para baixo &nbsp&nbsp ▼</div>
+        <div class="section-division" data-i18n="scroll-text">▼ Role para baixo ▼</div>
         <section id="projects">
             <div class="container">
-                <span class="title">Projetos</span>
+                <span class="title" data-i18n="projects">Projetos</span>
                 <a class="anchor" name="projects-anchor"></a>
             </div>
             <br><br><br>
@@ -98,8 +103,8 @@
                 <div class="project-div">
                     <div class="project-tab"></div>
                     <div class="project-content">
-                        <div class="project-content-title">App To-Do</div>
-                        <div class="project-content-desc">Aplicativo mobile de lembretes</div>
+                        <div class="project-content-title" data-i18n="project-title1"></div>
+                        <div class="project-content-desc" data-i18n="project-text1"></div>
                         <div class="project-content-bottom">
                             <div class="project-content-bottom-left">Android - Java - NoSQL</div>
                             <div class="project-content-bottom-right">
@@ -114,8 +119,8 @@
                 <div class="project-div">
                     <div class="project-tab"></div>
                     <div class="project-content">
-                        <div class="project-content-title">Criptografia AES</div>
-                        <div class="project-content-desc">Desenvolvido em Python</div>
+                        <div class="project-content-title" data-i18n="project-title2"></div>
+                        <div class="project-content-desc" data-i18n="project-text2"></div>
                         <div class="project-content-bottom">
                             <div class="project-content-bottom-left">Python</div>
                             <div class="project-content-bottom-right">
@@ -130,8 +135,8 @@
                 <div class="project-div">
                     <div class="project-tab"></div>
                     <div class="project-content">
-                        <div class="project-content-title">Jogo da velha</div>
-                        <div class="project-content-desc">Aplicativo mobile</div>
+                        <div class="project-content-title" data-i18n="project-title3"></div>
+                        <div class="project-content-desc" data-i18n="project-text3"></div>
                         <div class="project-content-bottom">
                             <div class="project-content-bottom-left">Android - Java</div>
                             <div class="project-content-bottom-right">
@@ -146,8 +151,8 @@
                 <div class="project-div">
                     <div class="project-tab"></div>
                     <div class="project-content">
-                        <div class="project-content-title">Eclipse</div>
-                        <div class="project-content-desc">Página web</div>
+                        <div class="project-content-title" data-i18n="project-title4"></div>
+                        <div class="project-content-desc" data-i18n="project-text4"></div>
                         <div class="project-content-bottom">
                             <div class="project-content-bottom-left">HTML - CSS - Javascript</div>
                             <div class="project-content-bottom-right">
@@ -162,8 +167,8 @@
                 <div class="project-div">
                     <div class="project-tab"></div>
                     <div class="project-content">
-                        <div class="project-content-title">Java Database Connectivity</div>
-                        <div class="project-content-desc">Conexão com Banco de Dados</div>
+                        <div class="project-content-title" data-i18n="project-title5"></div>
+                        <div class="project-content-desc" data-i18n="project-text5"></div>
                         <div class="project-content-bottom">
                             <div class="project-content-bottom-left">Java - SQL</div>
                             <div class="project-content-bottom-right">
@@ -178,8 +183,8 @@
                 <div class="project-div">
                     <div class="project-tab"></div>
                     <div class="project-content">
-                        <div class="project-content-title">Calculadora WEB</div>
-                        <div class="project-content-desc">Calculadora simples</div>
+                        <div class="project-content-title" data-i18n="project-title6"></div>
+                        <div class="project-content-desc" data-i18n="project-text6"></div>
                         <div class="project-content-bottom">
                             <div class="project-content-bottom-left">HTML - CSS - Javascript</div>
                             <div class="project-content-bottom-right">
@@ -193,20 +198,20 @@
                 </div>
             </div>
         </section>
-        <div class="section-division">▼ &nbsp&nbsp Role para baixo &nbsp&nbsp ▼</div>
+        <div class="section-division" data-i18n="scroll-text">▼ Role para baixo ▼</div>
         <section id="skills">
             <div class="container">
-                <span class="title">Habilidades</span>
+                <span class="title" data-i18n="skills"></span>
                 <a class="anchor" name="skills-anchor"></a>
             </div>
             <br><br><br>
             <div id="skills-grid">
                 <div class="skills-item" id="skills-item1">
                     <div class="skill-name-div">
-                        <div class="skill-name">HTML 5</div>
-                        <div class="skill-name">CSS 3</div>
-                        <div class="skill-name">Javascript</div>
-                        <div class="skill-name">Bootstrap</div>
+                        <div class="skill-name" data-i18n="skill-title1">HTML 5</div>
+                        <div class="skill-name" data-i18n="skill-title2">CSS 3</div>
+                        <div class="skill-name" data-i18n="skill-title3">Javascript</div>
+                        <div class="skill-name" data-i18n="skill-title4">Bootstrap</div>
                     </div>
                     <div class="skill-bars-div">
                         <div class="skill-bar">
@@ -225,10 +230,10 @@
                 </div>
                 <div class="skills-item" id="skills-item2">
                     <div class="skill-name-div">
-                        <div class="skill-name">Java</div>
-                        <div class="skill-name">Python</div>
-                        <div class="skill-name">SQL</div>
-                        <div class="skill-name">C</div>
+                        <div class="skill-name" data-i18n="skill-title5">Java</div>
+                        <div class="skill-name" data-i18n="skill-title6">Python</div>
+                        <div class="skill-name" data-i18n="skill-title7">SQL</div>
+                        <div class="skill-name" data-i18n="skill-title8">C</div>
                     </div>
                     <div class="skill-bars-div">
                         <div class="skill-bar">
@@ -247,10 +252,10 @@
                 </div>
                 <div class="skills-item" id="skills-item3">
                     <div class="skill-name-div">
-                        <div class="skill-name">Git</div>
-                        <div class="skill-name">Android 3</div>
-                        <div class="skill-name">Linux</div>
-                        <div class="skill-name">Jira</div>
+                        <div class="skill-name" data-i18n="skill-title9">Git</div>
+                        <div class="skill-name" data-i18n="skill-title10">Android 3</div>
+                        <div class="skill-name" data-i18n="skill-title11">Linux</div>
+                        <div class="skill-name" data-i18n="skill-title12">Jira</div>
                     </div>
                     <div class="skill-bars-div">
                         <div class="skill-bar">
@@ -269,8 +274,8 @@
                 </div>
                 <div class="skills-item" id="skills-item4">
                     <div class="skill-name-div">
-                        <div class="skill-name">Português</div>
-                        <div class="skill-name">Inglês</div>
+                        <div class="skill-name" data-i18n="skill-title13">Português</div>
+                        <div class="skill-name" data-i18n="skill-title14">Inglês</div>
                         <div class="skill-name">&#8205</div>
                         <div class="skill-name">&#8205</div>
                     </div>
@@ -287,15 +292,15 @@
                 </div>
             </div>
         </section>
-        <div class="section-division">▼ &nbsp&nbsp Role para baixo &nbsp&nbsp ▼</div>
+        <div class="section-division" data-i18n="scroll-text">▼ Role para baixo ▼</div>
         <section id="contact">
             <div class="container">
-                <span class="title">Contato</span>
+                <span class="title" data-i18n="contact">Contato</span>
                 <a class="anchor" name="contact-anchor"></a>
             </div><br><br>
-            Precisando entrar em contato comigo?<br><br><br>
+            <span data-i18n="contact-text">Precisando entrar em contato comigo?</span><br><br><br>
             <div id="contact-div">
-                Mídias sociais<br>
+                <span data-i18n="content-social-media">Mídias sociais</span><br>
                 <a href="https://github.com/dyaghas">
                     <button class="contact-btn" type="submit">
                         <img class="contact-btn-img" src="images/github-mark-white.svg">
@@ -308,13 +313,13 @@
                 </a>
                 <br>
                 <hr><br>
-                <b>E-mail</b><br><br><br>
+                <b data-i18n="content-email-title">E-mail</b><br><br><br>
                 <span id="contact-email">diamonddyaghas@gmail.com</span><br><br>
-                <button id="copy-email-btn" onclick="copyToClipboard()">Copiar</button>
+                <button id="copy-email-btn" onclick="copyToClipboard()" data-i18n="copy-email-btn">Copiar</button>
                 <hr><br>
-                <b>Currículo</b><br><br><br>
+                <b data-i18n="resume-title">Currículo</b><br><br><br>
                 <a href="curriculo-principal.pdf" download="" target="_blank">
-                    <button id="download-resume-btn"><b>Abrir</b></button>
+                    <button id="download-resume-btn" data-i18n="open-btn"><b>Abrir</b></button>
                 </a>
             </div>
         </section>
