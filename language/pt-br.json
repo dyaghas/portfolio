@@ -6,7 +6,7 @@
     "about-text2": "Nasci no dia 2 de abril de 2003 e moro em Campinas, São Paulo. Desde criança sempre demonstrei interesse por tecnologia, gostava de desmontar computadores e navegar pelo explorador de arquivos do Windows, mesmo sem entender muita coisa. Hoje em dia meus principais interesses em TI são: programação, sistemas legados e de baixo nível, banco de dados e cibersegurança.",
     
     "experience": "Experiência",
-    "experience-date1": "out 2023 - presente",
+    "experience-date1": "set 2023 - presente",
     "experience-title1": "Estagiário de Suporte - UNICAMP",
     "experience-text1": "Fazer manutenção e reparo em computadores, identificar problemas em máquinas, equipamentos eletrônicos e prestar suporte para funcionários, professores e alunos.",
     
@@ -18,11 +18,11 @@
     "project-title3": "Jogo da velha",
     "project-text3": "Aplicativo mobile",
     "project-title4": "Eclipse",
-    "project-text4:": "Página web",
+    "project-text4": "Página web",
     "project-title5": "Java Database Connectivity",
     "project-text5": "Conexão com Banco de Dados",
     "project-title6": "Calculadora WEB",
-    "project-text6:": "Calculadora simples",
+    "project-text6": "Calculadora simples",
 
     "skills": "Habilidades",
     "skill-title1": "HTML 5",
