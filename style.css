@@ -533,6 +533,7 @@ hr {
     .project-tab {
         height: 60px;
         width: 480px;
+        border-width: thick;
         border-top-left-radius: 75px;
         border-top-right-radius: 75px;
     }
@@ -618,7 +619,7 @@ hr {
         margin-bottom: 40px;
     }
     #download-resume-btn:hover {
-        border: 3px solid #CCCCCC;
+        border: 3px solid #cccccc;
     }
     #download-resume-btn:active {
         border: 3px solid #00A8E8;
@@ -626,17 +627,22 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
-    .nav-btn {
-        padding: 4px;
+    body {
+        font-size: 3vw;
     }
 
+    .nav {
+        font-size: 3vw;
+    }
+    .nav-btn {
+        padding: 12px;
+    }
     .content {
         padding: 0px 23px 8px 23px;
     }
     .section-division {
-        padding: 27px 0px 27px 0px;
+        padding: 70px 0px 70px 0px;
     }
-
     .project-div {
         padding: 3px;
     }
@@ -645,53 +651,72 @@ hr {
     #opening {
         padding-top: 60px;
     }
+    .title {
+        font-size: 4vw;
+    }
+    .section-content-half {
+        padding-bottom: 30px;
+    }
+    .section-image {
+        display: inline;
+        width: 30%;
+        padding-inline: 25%;
+    }
+    .half-width-image {
+        border: 1px solid transparent;
+    }
 
     /*projects section*/
+    #projects-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
     .project-div {
         padding: 8px;
     }
 
     /*project content shape*/
     .project-tab {
-        height: 5px;
-        width: 52px;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
+        height: 8px;
+        width: 90px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         filter: drop-shadow(3px 0px 5px #000000);
     }
     .project-content {
-        height: 70px;
-        width: 100px;
+        height: 115px;
+        width: 170px;
         border-radius: 10px;
         border-top-left-radius: 0px;
-        font-size: 1vw;
+        font-size: 2.2vw;
         filter: drop-shadow(3px 0px 5px #000000);
     }
     
     .project-content-title {
-        height: 12px;
-        width: 100px;
+        height: 18px;
+        width: 150px;
         padding: 5px 5px 0px 5px;
-        font-size: 1.6vw;
+        font-size: 2.7vw;
     }
     .project-content-desc {
-        top: 30px;
-        padding: 0px 5px 0px 5px;
+        top: 50px;
+        padding: 0px 7px 0px 7px;
     }
     .project-content-bottom {
-        height: 25px;
-        width: 90px;
-        padding: 0px 0px 0px 5px;
-        line-height: 30px;
+        height: 38px;
+        width: 170px;
+        padding: 0px 0px 0px 7px;
+        line-height: 45px;
     }
     .project-content-bottom-left {
-        width: 70px;
+        width: 105px;
     }
     .project-content-bottom-right {
-        width: 15px;
+        width: 45px;
     }
     .project-btn {
-        height: 12px;
+        height: 18px;
     }
 
     /*skills section*/
@@ -702,8 +727,8 @@ hr {
         row-gap: 6px;
     }
     .skills-item {
-        line-height: 10px;
-        grid-template-columns: 10% 90%;
+        line-height: 20px;
+        grid-template-columns: 25% 75%;
     }
     #skills-item1 {
         grid-column-start: 1;
@@ -714,6 +739,7 @@ hr {
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row: 2;
+        padding-bottom: 15px;
     }
     #skills-item3 {
         grid-column-start: 1;
@@ -728,14 +754,14 @@ hr {
     .skill-bar {
         display: flex;
         align-items: center;
-        margin: 4px;
+        margin: 7px;
         border-radius: 7px;
         background-color: #25323F;
     }
     .skill-bar-invisible {
         display: flex;
         align-items: center;
-        margin: 4px;
+        margin: 7px;
         border-radius: 7px;
         background-color: #131B23;
     }
@@ -752,7 +778,7 @@ hr {
     #copy-email-btn {
         border: 1px solid #CCCCCC;
         border-radius: 10px;
-        font-size: 1vw;
+        font-size: 2.5vw;
         padding: 8px 16px;
         margin-bottom: 30px;
     }
@@ -763,7 +789,7 @@ hr {
         border: 1px solid #00A8E8;
         border-radius: 11px;
         color: #CCCCCC;
-        font-size: 1.2vw;
+        font-size: 2.7vw;
         padding: 9px 19px;
         margin-bottom: 30px;
     }
@@ -772,5 +798,60 @@ hr {
     }
     #download-resume-btn:active {
         border: 1px solid #00A8E8;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /*projects section*/
+    #projects-grid {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .project-div {
+        padding: 16px;
+    }
+    
+    /*project content shape*/
+    .project-tab {
+        height: 11px;
+        width: 120px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        filter: drop-shadow(3px 0px 5px #000000);
+    }
+    .project-content {
+        height: 160px;
+        width: 250px;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        font-size: 3vw;
+        filter: drop-shadow(3px 0px 5px #000000);
+    }
+    
+    .project-content-title {
+        height: 23px;
+        width: 230px;
+        padding: 9px 9px 0px 9px;
+        font-size: 3.8vw;
+    }
+    .project-content-desc {
+        top: 70px;
+        padding: 0px 9px 0px 9px;
+    }
+    .project-content-bottom {
+        height: 38px;
+        width: 250px;
+        padding: 0px 0px 0px 9px;
+        line-height: 45px;
+    }
+    .project-content-bottom-left {
+        width: 150px;
+    }
+    .project-content-bottom-right {
+        width: 75px;
+    }
+    .project-btn {
+        height: 25px;
     }
 }
