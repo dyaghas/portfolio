@@ -168,6 +168,17 @@ body {
     border-radius: 25px;
     border-top-left-radius: 0px;
     filter: drop-shadow(3px 0px 10px #000000);
+    transition: 0.5s ease;
+}
+
+.project-content:hover {
+    background-color: #131B23;
+    border-color: #A55EEA;
+}
+
+.project-content:active {
+    background-color: #25323F;
+    border-color: #00A8E8;
 }
 
 .project-content-title {

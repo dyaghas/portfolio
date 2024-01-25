@@ -3,11 +3,11 @@
     
     "about": "About",
     "about-text": "I am a Computer Science student and developer with knowledge in Java, Android and C. I realized various projects during my studies, the most notable ones are: mobile applications, CRUD and an AES Criptography algorithm. I'm currently looking for an opportunity to show my skills.",
-    "about-text2": "I was born in april 2nd, 2003 and I live in a city called Campinas in São Paulo, Brazil. Since I was a kid I had an interest in technology, I liked to disassemble computers and browse the Windows File Explorer, even though I was not capable of making much of what was it. Today my main interests in the IT field are: programming, legacy and low level systems, database and cybersecurity.",
+    "about-text2": "I was born in april 2nd, 2003 and I live in a city called Campinas in São Paulo, Brazil. Since I was a kid I had an interest in technology, I liked to disassemble computers and browse the Windows File Explorer, even though I was not capable of making much of what was it. Today my main interests in the IT field are: Quality Assurance, legacy and low level systems, database and cybersecurity.",
     
     "experience": "Experience",
     "experience-date1": "sep 2023 - present",
-    "experience-title1": "Support Intern - UNICAMP",
+    "experience-title1": "Support Intern - Universidade Estadual de Campinas",
     "experience-text1": "Maintain and repair computers, identify problems and malfunctions in machines, electronic equipment and support employees, teachers and students.",
     
     "projects": "Projects",
@@ -25,18 +25,19 @@
     "project-text6": "Simple calculator",
 
     "skills": "Skills",
-    "skill-title1": "HTML 5",
-    "skill-title2": "CSS 3",
-    "skill-title3": "Javascript",
-    "skill-title4": "Bootstrap",
+    "skill-title1": "Git",
+    "skill-title2": "Android",
+    "skill-title3": "QA",
+    "skill-title4": "Linux",
+
     "skill-title5": "Java",
     "skill-title6": "Python",
     "skill-title7": "SQL",
     "skill-title8": "C",
-    "skill-title9": "Git",
-    "skill-title10": "Android",
-    "skill-title11": "Linux",
-    "skill-title12": "Jira",
+    "skill-title9": "HTML 5",
+    "skill-title10": "CSS 3",
+    "skill-title11": "Javascript",
+    "skill-title12": "Bootstrap",
     "skill-title13": "Portuguese",
     "skill-title14": "English",
     
